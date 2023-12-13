@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+    width: 250px;
+}
+
+button {
+    display: block;
+    width: calc(100% - 40px);
+    padding: 8px;
+    margin: 8px auto;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#toggleExtension.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#toggleExtension.inactive {
+    background-color: #f44336;
+    color: white;
+}
+
+#downloadButton {
+    background-color: #2196F3;
+    color: white;
+}
+
+#downloadButton:hover {
+    background-color: #1e88e5;
+}
+
+#toggleExtension.active:hover {
+    background-color: #66bb6a;
+}
+
+#toggleExtension.inactive:hover {
+    background-color: #e57373;
+}
+
+input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 8px;
+    margin: 10px auto;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    opacity: 1;
+}
+
+input[type="text"].fade-out {
+    background-color: #eee;
+    color: #aaa;
+    pointer-events: none;
+}
